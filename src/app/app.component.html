@@ -1,11 +1,13 @@
 <!-- Navigation -->
 <nav class="navbar">
-  <div class="logo">Y-D/MAX <span>FARC</span></div>
+  <div class="logo-wrapper">
+    <img src="../assets/images/lexma.jpg" alt="Logo Lexma" class="nav-logo">
+  </div>
   <div class="nav-links">
-    <a href="#apropos">À Propos</a>
-    <a href="#services">Nos Services</a>
-    <a href="#galerie">Réalisations</a>
-    <a href="#contact" class="btn-nav">Contactez-nous</a>
+    <a (click)="scrollToSection('apropos')" style="cursor: pointer;">À Propos</a>
+    <a (click)="scrollToSection('services')" style="cursor: pointer;">Nos Services</a>
+    <a (click)="scrollToSection('galerie')" style="cursor: pointer;">Réalisations</a>
+    <a (click)="scrollToSection('contact')" class="btn-nav" style="cursor: pointer;">Contactez-nous</a>
   </div>
 </nav>
 
@@ -13,12 +15,12 @@
 <header class="hero">
   <div class="overlay">
     <div class="hero-content">
-      <div class="brand-badge">40 Ans d'Expérience</div>
-      <h1>Y-D/MAX <span class="highlight">FARC</span></h1>
-      <p class="subtitle">Services professionnels et fiables pour tous vos travaux résidentiels et commerciaux.</p>
+      <div class="brand-badge">Maîtres Électriciens</div>
+      <h1>LEXMA <span class="highlight">ÉLECTRIQUE</span></h1>
+      <p class="subtitle">L'expertise au bout du fil. Solutions électriques résidentielles, commerciales et industrielles de haute qualité.</p>
       <div class="hero-buttons">
-        <a href="#contact" class="btn-primary">Demander une soumission</a>
-        <a href="#services" class="btn-outline">Explorer nos services</a>
+        <a (click)="scrollToSection('contact')" class="btn-primary" style="cursor: pointer;">Demander une soumission</a>
+        <a (click)="scrollToSection('services')" class="btn-outline" style="cursor: pointer;">Explorer nos services</a>
       </div>
     </div>
   </div>
@@ -28,77 +30,79 @@
 <section id="apropos" class="about-section">
   <div class="about-container">
     <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop" alt="Construction Worker">
+      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="Maître Électricien">
       <div class="experience-badge">
-        <span class="number">40</span>
-        <span class="text">Ans<br>d'expertise</span>
+        <span class="number">24/7</span>
+        <span class="text">Service<br>d'urgence</span>
       </div>
     </div>
     <div class="about-text">
-      <h2>Bâtir la confiance, un projet à la fois.</h2>
+      <h2>L'énergie qui fait avancer vos projets.</h2>
       <div class="divider-left"></div>
-      <p>Forts de <strong>40 ans d'expérience</strong> dans l'industrie, nous sommes spécialisés dans l'entretien, la rénovation et les travaux extérieurs. Que vous soyez un propriétaire occupant ou gestionnaire de flotte commerciale, notre équipe garantit un résultat durable et un service impeccable.</p>
+      <p>Chez <strong>Lexma Électrique Inc.</strong>, nous offrons un service irréprochable et sécuritaire pour tous vos besoins en électricité. Que ce soit pour une nouvelle construction, une rénovation majeure ou un dépannage d'urgence, notre équipe de professionnels qualifiés est là pour vous.</p>
       <ul class="check-list">
-        <li>Travail professionnel et minutieux</li>
-        <li>Service fiable respectant les délais</li>
-        <li>Résultats durables garantis</li>
+        <li>Mises aux normes et conformité strictes</li>
+        <li>Équipe certifiée, minutieuse et ponctuelle</li>
+        <li>Soumissions transparentes et respect des échéanciers</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- Section Nos Services (Améliorée avec images) -->
+<!-- Section Nos Services -->
 <section id="services" class="services">
   <div class="section-header">
-    <h2>Notre Expertise Complète</h2>
+    <h2>Notre Expertise Électrique</h2>
     <div class="divider"></div>
-    <p class="section-desc">Des solutions adaptées pour l'intérieur comme pour l'extérieur, résidentiel et commercial.</p>
+    <p class="section-desc">Des solutions sécuritaires et modernes, adaptées aux normes d'aujourd'hui.</p>
   </div>
 
   <div class="services-grid">
     
-    <!-- Catégorie 1: Services Généraux -->
+    <!-- Catégorie 1: Résidentiel -->
     <div class="service-card">
-      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=600&auto=format&fit=crop');"></div>
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600&auto=format&fit=crop');"></div>
       <div class="card-content">
-        <div class="icon-wrapper">🔨</div>
-        <h3>Entretien & Rénovation</h3>
+        <div class="icon-wrapper">🏠</div>
+        <h3>Résidentiel</h3>
         <ul>
-          <li>Entretien général</li>
-          <li>Rénovation intérieure et extérieure</li>
-          <li>Travaux pour propriétaires occupants</li>
-          <li>Logements locatifs</li>
-          <li>Maisons avec vide sanitaire</li>
+          <li>Changement de panneau électrique</li>
+          <li>Installation de bornes de recharge VÉ</li>
+          <li>Éclairage intérieur et extérieur</li>
+          <li>Câblage pour rénovations et constructions</li>
+          <li>Domotique et maisons intelligentes</li>
         </ul>
       </div>
     </div>
 
-    <!-- Catégorie 2: Spécialités Extérieures -->
+    <!-- Catégorie 2: Commercial -->
     <div class="service-card">
-      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600&auto=format&fit=crop');"></div>
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544724569-5f546fd6f2b6?q=80&w=600&auto=format&fit=crop');"></div>
       <div class="card-content">
-        <div class="icon-wrapper">🚧</div>
-        <h3>Spécialités Extérieures</h3>
+        <div class="icon-wrapper">🏢</div>
+        <h3>Commercial</h3>
         <ul>
-          <li>Scellant à bitume</li>
-          <li>Asphalte et pavé (réparation & entretien)</li>
-          <li>Lavage à pression haute performance</li>
-          <li>Entretien de stationnements</li>
+          <li>Aménagement électrique de commerces</li>
+          <li>Conversion d'éclairage au DEL</li>
+          <li>Entretien préventif et réparations</li>
+          <li>Raccordement d'équipements spécialisés</li>
+          <li>Enseignes et éclairage de sécurité</li>
         </ul>
       </div>
     </div>
 
-    <!-- Catégorie 3: Résidentiel & Commercial -->
+    <!-- Catégorie 3: Dépannage -->
     <div class="service-card">
-      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop');"></div>
+      <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=600&auto=format&fit=crop');"></div>
       <div class="card-content">
-        <div class="icon-wrapper">🏗️</div>
-        <h3>Secteur Commercial</h3>
+        <div class="icon-wrapper">⚡</div>
+        <h3>Urgences & Dépannage</h3>
         <ul>
-          <li>Entretien de bâtiments commerciaux</li>
-          <li>Gestion de logements locatifs</li>
-          <li>Lavage de flottes de camions</li>
-          <li>Nettoyage et scellant pour surfaces en béton</li>
+          <li>Service d'urgence disponible</li>
+          <li>Recherche de pannes électriques</li>
+          <li>Réparation de courts-circuits</li>
+          <li>Mises aux normes de sécurité</li>
+          <li>Inspection électrique complète</li>
         </ul>
       </div>
     </div>
@@ -111,36 +115,37 @@
   <div class="section-header">
     <h2>Nos Réalisations</h2>
     <div class="divider"></div>
-    <p class="section-desc">Un aperçu de notre savoir-faire sur le terrain.</p>
+    <p class="section-desc">Quelques exemples de nos travaux électriques et installations.</p>
   </div>
+  
   <div class="gallery-grid">
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chantier 1">
-    <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=500&auto=format&fit=crop" alt="Chantier 2">
-    <img src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?q=80&w=500&auto=format&fit=crop" alt="Chantier 3">
-    <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?q=80&w=500&auto=format&fit=crop" alt="Chantier 4">
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?q=80&w=600&auto=format&fit=crop" alt="Panneau électrique"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=600&auto=format&fit=crop" alt="Installation commerciale"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b6?q=80&w=600&auto=format&fit=crop" alt="Éclairage"></div>
+    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=600&auto=format&fit=crop" alt="Câblage"></div>
   </div>
 </section>
 
 <!-- Banner Contact Direct -->
 <section id="contact" class="contact-banner">
   <div class="banner-content">
-    <h2>Prêt à démarrer votre projet ?</h2>
+    <h2>Confiez-nous votre prochain projet</h2>
     <div class="divider-light"></div>
-    <p>Contactez-nous dès aujourd'hui. Travail professionnel, service fiable & résultats durables.</p>
+    <p>Contactez Lexma Électrique Inc. pour un service rapide, courtois et certifié.</p>
     
     <div class="contact-cards">
-      <a href="tel:438-622-1644" class="contact-card orange-card">
+      <a href="tel:450-756-7111" class="contact-card primary-card">
         <div class="contact-icon">📞</div>
-        <h3>YANN D.</h3>
-        <p>(438) 622-1644</p>
+        <h3>TÉLÉPHONE</h3>
+        <p>(450) 756-7111</p>
         <span class="call-action">Appeler maintenant</span>
       </a>
       
-      <a href="tel:438-523-7734" class="contact-card green-card">
-        <div class="contact-icon">📞</div>
-        <h3>MAX B.</h3>
-        <p>(438) 523-7734</p>
-        <span class="call-action">Appeler maintenant</span>
+      <a href="mailto:gestion@lexma-electrique.com" class="contact-card secondary-card">
+        <div class="contact-icon">✉️</div>
+        <h3>COURRIEL</h3>
+        <p style="font-size: 1.2rem; word-break: break-all;">gestion&#64;lexma-electrique.com</p>
+        <span class="call-action">Écrivez-nous</span>
       </a>
     </div>
   </div>
@@ -149,15 +154,16 @@
 <!-- Pied de page -->
 <footer>
   <div class="footer-content">
-    <div class="footer-logo">Y-D/MAX <span>FARC</span></div>
-    <p>Services 40 ans d'expérience</p>
+    <div class="footer-logo">
+      <img src="/assets/images/lexma.jpg" alt="Logo Lexma" style="height: 50px; border-radius: 4px;">
+    </div>
     <div class="footer-links">
-      <a href="#apropos">À Propos</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a (click)="scrollToSection('apropos')" style="cursor: pointer;">À Propos</a>
+      <a (click)="scrollToSection('services')" style="cursor: pointer;">Services</a>
+      <a (click)="scrollToSection('contact')" style="cursor: pointer;">Contact</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Y-D/MAX FARC. Tous droits réservés.</p>
+    <p>&copy; 2026 Lexma Électrique Inc. Tous droits réservés.</p>
   </div>
 </footer>

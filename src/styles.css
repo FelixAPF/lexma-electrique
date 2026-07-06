@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-  --color-primary: #e67e22; /* Orange Y-D/MAX */
-  --color-secondary: #27ae60; /* Vert Y-D/MAX */
-  --color-dark: #1f2122; /* Gris très foncé */
-  --color-darker: #111111;
-  --color-bg-light: #f8f9fa;
-  --color-white: #ffffff;
-  --color-text: #555555;
-  --color-gray-light: #e9ecef;
+  --color-primary: #F4D03F; /* Jaune électrique (basé sur l'éclair du logo) */
+  --color-secondary: #0B132B; /* Bleu marine très foncé / Noir (basé sur le texte du logo) */
+  --color-dark: #1C2541; /* Bleu foncé */
+  --color-darker: #050914; /* Presque noir */
+  --color-bg-light: #F8F9FA;
+  --color-white: #FFFFFF;
+  --color-text: #4A4A4A;
+  --color-gray-light: #E9ECEF;
 }
 
 * {
