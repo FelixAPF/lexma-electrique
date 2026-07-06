@@ -597,9 +597,11 @@ footer {
 @media (max-width: 992px) {
   /* Navbar */
   .navbar {
-    width: 90%;
-    padding: 12px 20px;
-    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    flex-wrap: nowrap; /* force single row, don't let it grow taller */
+    align-items: center;
   }
   .nav-logo {
     height: 35px;
@@ -611,17 +613,22 @@ footer {
     display: none;
   }
   
-  /* Hero fixes */
   .hero {
-    align-items: flex-start;
-    padding-top: 130px;
-    padding-bottom: 60px;
     height: auto;
-    min-height: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    padding-top: 0;      /* not actually offsetting overlay, so no need to inflate it */
+    padding-bottom: 60px;
+  }
+
+  .overlay {
+    align-items: flex-start;
+    padding-top: 200px;  /* this is what actually needs to clear the navbar — tune this number */
   }
   .hero-content {
     text-align: center;
   }
+  
   .hero-buttons {
     justify-content: center;
   }
